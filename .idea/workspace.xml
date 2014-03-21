@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f41d4676-850b-4597-809a-1584924d74c1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task.js" afterPath="$PROJECT_DIR$/task.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/car.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/post.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="carfans-api.iws" />
@@ -49,7 +51,7 @@
       <file leaf-file-name="task3.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="645">
+            <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.45967743" vertical-offset="0" max-vertical-offset="645">
               <folding />
             </state>
           </provider>
@@ -257,18 +259,24 @@
       <created>1395122939657</created>
       <updated>1395122939657</updated>
     </task>
+    <task id="LOCAL-00001" summary="测试最终还是使用node crawler和 cheerio两个组件来做抓取">
+      <created>1395378779378</created>
+      <updated>1395378779378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-5" width="1857" height="1086" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918212" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39813858" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39813858" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988626" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -294,6 +302,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="测试最终还是使用node crawler和 cheerio两个组件来做抓取" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试最终还是使用node crawler和 cheerio两个组件来做抓取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -338,7 +348,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.5135135" vertical-offset="0" max-vertical-offset="645">
+        <state line="19" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.45967743" vertical-offset="0" max-vertical-offset="645">
           <folding />
         </state>
       </provider>
