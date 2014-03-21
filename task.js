@@ -1,19 +1,51 @@
-var request = require('request')
-  , cheerio = require('cheerio')
-  , async = require('async')
-  , format = require('util').format;
+var links = [];
+var casper = require('casper').create();
 
-var reddits = [ 'programming', 'javascript', 'node' ]
-  , concurrency = 2;
+var titles = [];
 
-async.eachLimit(reddits, concurrency, function (reddit, next) {
-    var url = format('http://reddit.com/r/%s', reddit);
-    request(url, function (err, response, body) {
-        if (err) throw err;
-        var $ = cheerio.load(body);
-        $('a.title').each(function () {
-            console.log('%s (%s)', $(this).text(), $(this).attr('href'));
-        });
-        next();
+function getLinks() {
+    var links = document.querySelectorAll('h3.r a');
+    return Array.prototype.map.call(links, function(e) {
+        return e.getAttribute('href');
     });
+}
+
+var host = 'http://www.google.com.hk';
+
+casper.start('http://www.google.com.hk/', function() {
+    // search for 'casperjs' from google form
+    this.fill('form[action="/search"]', { q: '兰博基尼' }, true);
+});
+
+casper.then(function() {
+    // aggregate results for the 'casperjs' search
+    links = this.evaluate(getLinks);
+    // now search for 'phantomjs' by filling the form again
+    for(var i in links){
+        console.log(host + links[i]);
+    }
+    this.fill('form[action="/search"]', { q: 'abc' }, true);
+});
+
+casper.then(function() {
+    // aggregate results for the 'phantomjs' search
+    links = links.concat(this.evaluate(getLinks));
+    for(var i in links){
+        console.log(host + links[i]);
+    }
+});
+
+casper.run(function() {
+    // echo results in some pretty fashion
+    this.echo(links.length + ' links found:');
+/*    for(var i in links){
+        console.log(i);
+        var url = links[i];
+        console.log(host + url);
+    }
+    for(var i in titles){
+        console.log(titles[i]);
+    }*/
+    this.exit();
+
 });
